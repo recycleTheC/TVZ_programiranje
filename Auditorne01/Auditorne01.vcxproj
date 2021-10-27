@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{180f51e9-9a03-4c2e-884d-30604317b1e2}</ProjectGuid>
-    <RootNamespace>Auditorne1</RootNamespace>
+    <ProjectGuid>{dc297df0-63c4-4696-9273-367e3f6adb77}</ProjectGuid>
+    <RootNamespace>Auditorne01</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Auditorne01</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -139,6 +138,15 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="HelloWorld.c" />
+    <ClCompile Include="Primjer1.c" />
+    <ClCompile Include="Primjer2.c" />
+    <ClCompile Include="zad01.c" />
+    <ClCompile Include="zad02.c" />
+    <ClCompile Include="zad03.c" />
+    <ClCompile Include="zad04.c" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
