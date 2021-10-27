@@ -138,15 +138,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="HelloWorld.c" />
-    <ClCompile Include="Primjer1.c" />
-    <ClCompile Include="Primjer2.c" />
-    <ClCompile Include="zad01.c" />
-    <ClCompile Include="zad02.c" />
-    <ClCompile Include="zad03.c" />
-    <ClCompile Include="zad04.c" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

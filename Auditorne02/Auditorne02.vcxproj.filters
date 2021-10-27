@@ -15,22 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="binarni_brojevi.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="kalkulator.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="kolaci.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="licenje_sobe.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="poruke.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="spolizacija.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

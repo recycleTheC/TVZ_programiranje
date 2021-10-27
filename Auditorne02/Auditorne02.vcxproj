@@ -19,12 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="binarni_brojevi.c" />
-    <ClCompile Include="kalkulator.c" />
     <ClCompile Include="kolaci.c" />
-    <ClCompile Include="licenje_sobe.c" />
-    <ClCompile Include="poruke.c" />
-    <ClCompile Include="spolizacija.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
