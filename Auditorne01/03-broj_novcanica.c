@@ -3,8 +3,8 @@
 #include<stdio.h>
 
 void main() {
-	double iznos = 943.3;
-	// scanf("%f", &iznos);
+	double iznos;
+	scanf("%f", &iznos);
 
 	int petsto = iznos / 500;
 	printf("%d x 500\n", petsto);
@@ -18,5 +18,15 @@ void main() {
 	printf("%d x 100\n", sto);
 	iznos -= sto * 100;
 
+	int pedeset = iznos / 50;
+	printf("%d x 50\n", pedeset);
+	iznos -= pedeset * 50;
 
+	int dvadeset = iznos / 20;
+	printf("%d x 20\n", dvadeset);
+	iznos -= dvadeset * 20;
+
+	int deset = iznos / 10;
+	printf("%d x 10\n", deset);
+	iznos -= dvadeset * 10;
 }
