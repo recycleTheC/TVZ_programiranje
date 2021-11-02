@@ -18,11 +18,14 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="priprema2.c" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{d7daf884-0021-4f04-9a3f-a36d96833695}</ProjectGuid>
-    <RootNamespace>Auditorne02</RootNamespace>
+    <ProjectGuid>{e1bcea61-55d1-4bd6-b6c0-1295f7a1a959}</ProjectGuid>
+    <RootNamespace>LaboratorijskaVjezba01</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
