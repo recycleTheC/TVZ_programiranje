@@ -1,0 +1,1 @@
+Potrebno je učitati dva broja sa standardnog ulaza (a i b), i ispisati kao rezultat njihov zbroj.

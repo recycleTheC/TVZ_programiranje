@@ -1,0 +1,9 @@
+Napišite program koji učitava 5 znakova (5 podataka tipa char) koje interpretiramo kao binarni prikaz cijelog broja s predznakom (signed int). Ako ulazni niz sadrži samo binarne znamenke (0 ili 1), program treba ispisati dekadski zapis tog broja, prema pravilu da prvi učitani znak označava predznak broja (0 je +, a 1 je −).
+
+Ostatak niza interpretiramo ovisno o predznaku:
+
+ nenegativni (uključena je i 0) brojevi imaju uobičajeni prikaz
+ negativni brojevi se prikazuju dvojnim komplementom
+ 
+
+Ako ulazni niz sadrži barem jedan znak koji nije binarna znamenka, treba ispisati poruku „Pogresan unos!“ i prekinuti izvođenje programa. 

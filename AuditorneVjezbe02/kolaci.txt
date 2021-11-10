@@ -1,0 +1,13 @@
+Perici je mama dala džeparac za školu, a on ga je odlučio potrošiti na kolače u slastičarni.
+Slastičarna nudi kolače različitih oblika,veličina i cijena.
+Perica treba program u koji unosi iznos džeparca,broj stranica,duljinu stranice, visinu kolača(sve u cm) i cijenu jednog komada(u kn).
+Program ispisuje koliko kolača može kupiti i kolika je isplativost(koliko kuna plati za jedan cm^3 kolača).
+
+Broj stranica kolača ne smije biti manji od 3. Duljina stranice moraju biti 0 ili veći. Ukoliko je unos krivi, ispisati "Krivi unos! Molim probajte opet." i čekati na novi unos.
+
+Napomene: 
+uključiti #include <math.h>
+formula za volumen jednog kolača: V=h*n*(a^2)*(cos(3.14/n)/sin(3.14/n))/4
+isplativost=cijena jednog kolača/volumen jednog kolača
+
+Autor zadatka: Joško Jurčević, RAČ, 18/19

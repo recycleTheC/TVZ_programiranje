@@ -1,0 +1,13 @@
+Isprogramirajte jednostavni kalkulator!
+
+Vaš kalkulator treba podržavati funkcije:
+
+Zbrajanje
+Oduzimanje
+Množenje
+Dijeljenje
+Kvadriranje
+
+Kalkulator treba raditi samo s cijelim brojevima.
+
+Pogledajte test caseove za primjere rada kalkulatora. 

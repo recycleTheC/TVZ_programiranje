@@ -1,0 +1,8 @@
+Spolizacija je proces u birokraciji kojim se na temelju JMBG broja građana određuje kojeg je spola građanin. Za Zagreb vrijedi sljedeće pravilo kod JMBG brojeva: prvih 7 znamenki nastaje iz datuma rođenja, nakon toga 330 ako se radi o muškarcu, 335 ako se radi o ženi. Algoritam za zadnje 3 znamenke je u našem slučaju nebitan, i recimo da su zadnje 3 znamenke proizvoljne. 
+
+Primjer jednog JMBG-a muškarca rođenog na datum 04.07.2010.:
+0407010330007 (test case 1)
+Primjer jednog JMBG-a žene rođene na datum 12.03.1996.:
+1203996335909 (test case 2)
+
+Dodatno, spolizaciju obavlja tek referent početnik, te zbog ne snalaženja u poslu unosi JMBG znamenku po znamenku u svaki redak. Vaša je zadaća napisati program u kojem će on unijeti znamenku po znamenku i po unosu svih 13 znamenki, program ispisuje „Muška osoba“ ukoliko se radi o muškarcu ili „Ženska osoba“ ukoliko se radi o ženi.

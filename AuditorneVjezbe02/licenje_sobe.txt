@@ -1,0 +1,8 @@
+Napišite C program koji računa cijenu za ličenje prostorije visine V metara, širine S metara i duljine D metara, ako se jedan metar kvadratni naplaćuje 10,40 kn. 
+Potrebno je uzeti u obzir da se u prostoriji ne liče podovi i vrata visine 0,75*V (75% visine prostorije) i širine A i dva prozora dimenzija 0,1*Vx0,1*S (10% visine i širine prostorije). 
+
+V,S,D i A su pozitivni realni brojevi koje unosi korisnik.
+U slučaju pogrešnih unosa dimenzija, ispisati odgovarajuće poruke ( "Dimenzija mora biti pozitivna!" ili "Vrata moraju stati u prostoriju!").
+
+Nakon ispravnih unosa potrebno je ispisati konačnu cijenu ličenja u obliku:
+Konacna cijena je: __ kuna i ___lipa.
