@@ -1,0 +1,3 @@
+Uèitati prirodan broj n, te ispisati koliko i koji elementi cjelobrojnog polja 
+p[100] sadrže tu vrijednost. Potrebno je generirati brojeve niza koristeæi rand()
+Popuniti polje p sa brojevima iz intervala [-10,10]

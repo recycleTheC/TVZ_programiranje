@@ -15,31 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="binarni_brojevi.txt">
+    <Text Include="zad01.txt">
       <Filter>Source Files</Filter>
     </Text>
-    <Text Include="kalkulator.txt">
+    <Text Include="zad02.txt">
       <Filter>Source Files</Filter>
     </Text>
-    <Text Include="kolaci.txt">
+    <Text Include="zad03.txt">
       <Filter>Source Files</Filter>
     </Text>
-    <Text Include="spolizacija.txt">
+    <Text Include="zad04.txt">
       <Filter>Source Files</Filter>
     </Text>
-    <Text Include="poruke.txt">
-      <Filter>Source Files</Filter>
-    </Text>
-    <Text Include="licenje_sobe.txt">
-      <Filter>Source Files</Filter>
-    </Text>
-    <Text Include="kvadrat.txt">
-      <Filter>Source Files</Filter>
-    </Text>
-    <Text Include="maribor.txt">
-      <Filter>Source Files</Filter>
-    </Text>
-    <Text Include="munja.txt">
+    <Text Include="zad05.txt">
       <Filter>Source Files</Filter>
     </Text>
   </ItemGroup>

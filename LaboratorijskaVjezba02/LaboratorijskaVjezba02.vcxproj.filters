@@ -15,31 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="binarni_brojevi.txt">
+    <ClCompile Include="zad.c">
       <Filter>Source Files</Filter>
-    </Text>
-    <Text Include="kalkulator.txt">
-      <Filter>Source Files</Filter>
-    </Text>
-    <Text Include="kolaci.txt">
-      <Filter>Source Files</Filter>
-    </Text>
-    <Text Include="spolizacija.txt">
-      <Filter>Source Files</Filter>
-    </Text>
-    <Text Include="poruke.txt">
-      <Filter>Source Files</Filter>
-    </Text>
-    <Text Include="licenje_sobe.txt">
-      <Filter>Source Files</Filter>
-    </Text>
-    <Text Include="kvadrat.txt">
-      <Filter>Source Files</Filter>
-    </Text>
-    <Text Include="maribor.txt">
-      <Filter>Source Files</Filter>
-    </Text>
-    <Text Include="munja.txt">
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="priprema.txt">
       <Filter>Source Files</Filter>
     </Text>
   </ItemGroup>

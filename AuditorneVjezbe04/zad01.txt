@@ -1,0 +1,1 @@
+Kreirajte polje velièine 20 elemenata, i popunite ga random brojevima u intervalu [0,200]. Potrebno je ispisati najveæi i najmanji element.

@@ -1,0 +1,2 @@
+Napiši program koji za cjelobrojno polje niz[50] ispisuje koliko elemenata sadrži 
+parne, a koliko neparne vrijednosti. Generirati sluèajne vrijednosti za elemente polja

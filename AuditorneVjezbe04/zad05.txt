@@ -1,0 +1,5 @@
+Kreirajte polje velièine 4 elementa i uèitajte brojeve u to polje. Nakon toga je potrebno uèitavati redom brojeve s ulaza, te ukoliko broj X postoji u polju, primijeniti sljedeæi algoritam:
+- pronaæi broj X
+- zamijeniti broj X sa dva elementa: [X/2, X/2+1]
+- ispisati polje kako trenutno izgleda
+- ukoliko je unesen broj koji ne postoji u polju, prekinuti unos

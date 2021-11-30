@@ -1,0 +1,18 @@
+Uèitava se izraz koji se sastoji od jednoznamenkastih brojeva, zagrada (vitice, uglate, okrugle), i operatora +,-,*,/. Potrebno je ispisati je li izraz ispravan ili ne.
+Izraz nije ispravan ako:
+- neka zagrada nije zatvorena
+- postoje zagrade primjerice ovako: (...[..)..]
+- dva operatora se nalaze jedan iza drugog
+- dvije znamenke se nalaze jedna iza druge
+- ako iza znamenke slijedi otvorena zagrada
+- ako se pojavljuju bilo koji drugi znakovi
+- ako se unutar zagrada ne nalazi ništa
+
+Najveæa moguæa duljina izraza je ukupno 100 znakova. Kraj unosa oznaèava toèka.
+
+(1+2). ISPRAVNO
+
+1++2. NEISPRAVNO
+((1+2)+3)/4)*5. NEISPRAVNO
+
+{[(1+2)+3]+4}*5. ISPRAVNO

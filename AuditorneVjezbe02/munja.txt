@@ -1,0 +1,41 @@
+Ivan Horvat, popularno zvan "Munja", je odluèio probati zaraditi na pretvaranju valuta. Inicijalno, on raspolaže sa 100,00 kn. Svaki dan, pogleda teèaj za promjenu EUR <-> KN, i ako je teèaj najpovljniji (za njega) do sad koji je vidio, pretvorit æe sve novce jedne valute u drugu. 
+
+Vaš zadatak je napisati program koji æe simulirati ponašanje našeg Munje, i nakon što proðe N dana ispisati koliko kuna ili eura ima Munja.
+
+Uèitava se prirodni broj N, koji oznaèava koliko dana Munja mijenja novce, a u svakom retku nalaze se dva decimalna broja p i k sa 5 decimala koji oznaèavaju prodajni i kupovni teèaj za EUR:
+Ukoliko Munja ima 100,00 kn, a prodajni teèaj za EUR je 7,50000; Munja æe taj dan završiti s 13,33 € (ukoliko, prema pravilima zadatka, odluèi promijeniti novce). Primjerice, kad iduæi put bude imao kune, promijenit æe samo ako je prodajni teèaj manji od 7,50000 (tada je teèaj povoljniji)
+Ukoliko Munja ima 20,00 €, a kupovni teèaj za EUR je 7,40000; Munja æe taj dan završiti sa 148,00 kn (uvijek se zaokružuje na 2 decimale). Primjerice, kad iduæi put bude imao eure, promijenit æe samo ako je kupovni teèaj veæi od 7,40000 (tada mu je teèaj povoljniji)
+Napomena: prouèiti test primjere za detaljnije informacije.
+
+Munja uvijek kreæe sa 100,00 kn. U ovom sluèaju, 1. dan æe promijeniti u EUR, a drugi dan u KN. Drugi dan æe promijeniti novce, jer je teèaj najveæi do tada.
+
+2
+7.21123 7.11191
+7.65433 7.62229
+
+Nakon 2 promjena, ostaje mu 105.72 kn.
+
+
+Nakon prvog dana ima EUR, nakon drugog dana opet ima KN, nakon drugog dana æe i dalje èuvati kune (neæe mijenjati jer teèaj 6.98392 je nepovoljniji od 6.90000 koji je veæ bio), a zadnji dan æe promijeniti u EUR, jer je to najpovoljniji teèaj do tada.
+
+4
+7.00000 6.99995
+6.90000 7.43300
+6.98392 9.82873
+6.77700 6.54637
+
+Nakon 3 promjena, ostaje mu 15.67 EUR.
+
+
+U ovom sluèaju, najpovoljniji dan za promjenu EUR -> KN je bio prvi dan, te æe Munja do kraja imati samo EUR koje promijeni 1. dana.
+
+7
+6.98392 9.82873
+7.21314 8.99983
+7.12344 9.32424
+9.32342 9.81342
+5.65423 9.82872
+8.54643 7.32900
+8.53634 8.54333
+
+Nakon 1 promjena, ostaje mu 14.32 EUR.

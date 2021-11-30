@@ -1,0 +1,6 @@
+Potrebno je unositi mala ili velika slova eng. abecede dok se ne unese *,  i na kraju ispisati kojeg je slova koliko bilo.
+Primjerice, za unesena slova aAabfF, ispisuje se:
+a:3
+b:1
+f:2
+Najvise je bilo slova a.

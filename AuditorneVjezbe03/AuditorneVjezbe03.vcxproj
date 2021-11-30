@@ -19,7 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="07-savrseni_brojevi.c" />
+    <ClCompile Include="matematika.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="matematika.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

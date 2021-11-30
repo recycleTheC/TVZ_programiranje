@@ -1,0 +1,1 @@
+Napišite program koji uèitava prirodni broj n. Program treba ispisati koliko ima prirodnih brojeva, strogo veæih od 1, èiji kvadrat dijeli broj n.

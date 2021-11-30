@@ -18,11 +18,14 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="zad07.c" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{4f0117a5-1c3b-4fc7-a4e1-cc9afe3794fe}</ProjectGuid>
-    <RootNamespace>AuditorneVjezbe02</RootNamespace>
+    <ProjectGuid>{3d1c8fd4-fc03-451a-9108-3a19d04456e0}</ProjectGuid>
+    <RootNamespace>AuditorneVjezbe05</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -138,17 +141,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <Text Include="binarni_brojevi.txt" />
-    <Text Include="kalkulator.txt" />
-    <Text Include="kolaci.txt" />
-    <Text Include="kvadrat.txt" />
-    <Text Include="licenje_sobe.txt" />
-    <Text Include="maribor.txt" />
-    <Text Include="munja.txt" />
-    <Text Include="poruke.txt" />
-    <Text Include="spolizacija.txt" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

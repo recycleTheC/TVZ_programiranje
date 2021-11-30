@@ -1,0 +1,28 @@
+Boštjan izraðuje aplikaciju za pametni kalendar. Kao jednu od osnovnih funkcionalnosti, potrebno je napraviti modul za izraèun toènog datuma u odnosu na zadani trenutak u vremenu.
+
+Kao prvi parametar, potrebno je uèitati brojeve D, M, G H, m i s, koji predstavljaju dan, mjesec, godinu, sat, minutu i sekundu. Ukoliko je godina manja od 1900 ili veæa od 2015, potrebno je ponoviti upis. Nakon toga potrebno je ucitati prirodni broj K. 
+
+Kao rezultat, potrebno je ispisati toèan datum (dan, mjesec, godinu i vrijeme) uveæan za K sekundi u odnosu na poèetni datum.
+
+
+23 10 2015 10 52 11
+567
+
+23.10.2015. 11:01:38
+
+-------
+
+Prvotno uèitana godina = 2016, što je izvan dopuštenog intervala. Nakon toga je uèitana godina 176 koja je isto izvan dopuštenog intervala.
+
+23 10 2016 10 52 11
+23 10 176 10 52 11
+1 1 1952 10 00 00
+992
+
+1.1.1952. 10:16:32
+
+--------
+31 12 2013 23 59 59
+31536001
+
+1.1.2015. 00:00:00

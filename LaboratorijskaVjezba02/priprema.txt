@@ -1,0 +1,77 @@
+Našli ste u podrumu gomilu novaca, i razmišljate kako najbolje to uložiti u ovim nestabilnim vremenima.
+
+Razmišljali ste možda staviti u banku na kamatu 0.25 %, ali nakon dugog razmišljanja ste se ipak predomislili jer se èini se ne isplati.
+
+I onda vam je sinulo da ste èuli za dollar cost averaging metodu koja se smatra najjednostavnijom generalno profitabilnom metodom ulaganja.
+Dionice vam nisu baš napete, a atraktivno vam je slušati izvještaje stožera svaki dan o novom broju zaraženih, te ste odluèili primjeniti sljedeæi algoritam ulaganja u ETH.
+
+- taj dan, u trenutku kad stožer objavi informacije o novom broju, pogledat æete cijenu ETH
+- ako je cijena u dolarima manja od broja zaraženih - kupit æete 1 ETH(sjetimo se, našli smo hrpu para u podrumu)
+- ako je cijena u dolarima manja od 20 % broja zaraženih, prodat æete sve što imate ETH(jer takoðer vjerujete u poznati crypto moto : buy high - sell low)
+
+Za uneseni broj N, te N redaka koji sadrže dva broja : cijena 1 ETH u dolarima te broj zaraženih taj dan, vaš zadatak je simulirati prodaje i kupnje prema gornjem algoritmu, te na kraju zadnjeg dana ispisati koliko ETH posjedujete, koliko dolara imate od prodaja ETH te koliko ste ukupno dolara potrošili na kupnje.
+
+Napomena : kod rada s "double" tipom podataka, uèitati s% lf, a ispisati s% f.
+
+Ulaz
+
+3
+3200.56 2800
+3097.78 3112
+3198.76 3144
+
+Izlaz
+
+1 ETH
+Prodano ETH: $0.00
+Kupljeno ETH: $3097.78
+
+Ulaz
+
+40
+3419 3102
+3014 3830
+2497 6467
+2223 4722
+3019 7672
+2593 1815
+2130 4496
+1942 4922
+2186 3821
+2170 2257
+3418 6090
+2091 1847
+4256 7112
+1640 3279
+4063 7550
+3117 683
+2882 2806
+4134 6294
+2950 6715
+2048 7460
+2179 4521
+2886 1059
+3393 3807
+1769 2020
+3622 7681
+4086 6466
+2873 2162
+4395 594
+2438 2392
+3260 3247
+3240 3549
+2211 719
+4311 838
+3806 1477
+2700 7076
+1738 5918
+2966 6809
+2903 4173
+3158 3682
+3667 5931
+
+Izlaz
+
+27 ETH
+Prodano ETH: $0.00
+Kupljeno ETH: $77111.00
