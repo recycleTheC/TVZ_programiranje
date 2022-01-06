@@ -1,0 +1,223 @@
+Gospodin Ivan je profesor dobar. Svakog se jutra ustane rano, pa se ureðuje, pere, brije...
+I dok još kuæa miriše na jutarnje pranje na pamet mu pada kako da svoje studente zainteresira za programiranje.
+On smišlja tako jednu igru koju æe na iduæem predavanju zaigrati sa svojim studentima preko poruka kroz MS Teams.
+Ivan æe zamisliti jednu životinju, a studenti æe morati pogoditi što je zamislio. Svaki student koji se želi igrati
+u zajednièki kanal tipka naziv životinje. Nije unaprijed poznato koliko studenata æe poslati prijedlog, ali igra završava
+nakon što Ivan natipka koju životinju je zamislio.
+
+Da bi igra bila programerski zanimljiva studenti moraju napraviti C program koji æe uèitavati listu studentskih poruka sve
+dok Ivan ne natipka koju životinju je zamislio. Program nakon toga ispisuje koliko je studenata pogodilo životinju i to u
+formatu "Broj studenata koji su pogodili zivotinju: X od Y.", gdje je Y ukupni broj studenata koji su igrali. Potrebno je
+ispisati i listu studenata koji su pogodili životinju.
+
+Moguæe je da æe se desiti da nitko od studenata ništa ne natipka, a u tom sluèaju Ivan tipka što je zamislio i prekida se
+izvoðenje programa uz poruku "Vise srece drugi put!". Ista poruka se ispisuje i u sluèaju da nitko nije pogodio životinju
+koju je profesor zamislio.
+
+Format poruke koja se šalje kroz MS Teams je:
+
+[11:25] Ime Prezime: tekst 
+
+gdje je moguæe da se Ime ili Prezime sastoji od više rijeèi.
+
+Primjer poruke:
+
+[11:25] Prosper Matkovic: ok, a koje gradivo ulazi u iducu pripremu/ labos?
+
+VAŽNO: Preporuka je da se zadatak riješi korištenjem funkcija i polja pokazivaèa.
+ZABRANJENO JE KORIŠTENJE GLOBALNIH VARIJABLI!
+
+------------------------------------- 1. test case -------------------------------------
+
+U ovom primjeru igru je igralo 12 studenata prije nego je
+profesor Ivan natipkao zamišljenu životinju. Troje studenata
+je pogodilo koja je to životinja. Lista studenata koji su pogodili
+životinju uvijek se ispisuje istim redoslijedom kojim su se studenti
+javljali porukama, dakle student koji je prvi poslao poruku je prvi u listi, itd.
+
+ULAZ:
+
+[11:25] Bogadi Alen: Kameleon
+[11:25] Begovic Amir: Magarac
+[11:25] Novak Anel: Tapir
+[11:25] Milanja Ante: Jelen
+[11:25] Mavracic Antonio: Morski pas
+[11:35] Dutkovic Ivan: Vuk
+[11:35] Kulic Ivan: Orao
+[11:53] Prekratic Ivan: Kameleon
+[11:53] Vuletic Jaksa: Krava
+[11:53] Bakaric Jan: Kameleon
+[11:53] Mladar Jan: Majmun
+[12:13] Bakran Josip: Slon
+[12:13] Profesor Ivan: Kameleon
+
+IZLAZ:
+
+Broj studenata koji su pogodili zivotinju: 3 od 12.
+
+Studenti koji su pogodili zivotinju:
+Bogadi Alen
+Prekratic Ivan
+Bakaric Jan
+
+------------------------------------- 1. test case -------------------------------------
+
+------------------------------------- 2. test case -------------------------------------
+
+U ovom primjeru nitko od studenata nije natipkao poruku.
+
+ULAZ:
+
+[14:27] Profesor Ivan: Pas
+
+IZLAZ:
+
+Vise srece drugi put!
+
+------------------------------------- 2. test case -------------------------------------
+
+------------------------------------- 3. test case -------------------------------------
+
+U ovom primjeru nitko nije pogodio što je profesor Ivan zamislio.
+
+ULAZ:
+
+[17:22] Kopjar Mario: Tapir
+[17:22] Antonov Mark: Krava
+[17:22] Brigljevic Marko: Zmija
+[17:24] Osmanovic Marko: Sokol
+[17:24] Vukovic Marko: Pingvin
+[17:30] Kis Matej: Majmun
+[17:30] Aleksic Matija: Zirafa
+[17:24] Trzic Mihael: Koza
+[17:24] Profesor Ivan: Mrav
+
+IZLAZ:
+
+Broj studenata koji su pogodili zivotinju: 0 od 8.
+
+Vise srece drugi put!
+
+------------------------------------- 3. test case -------------------------------------
+
+------------------------------------- 4. test case -------------------------------------
+
+U ovom primjeru nitko nije pogodio što je profesor Ivan zamislio.
+
+ULAZ:
+
+[08:13] Kovacic Domagoj: Bogomoljka
+[08:13] Pajkovic Luka: Koza
+[08:13] Martincic Sebastijan: Pas
+[08:14] Dutkovic Ivan: Vuk
+[08:14] Bistricki Karlo: Krava
+[08:14] Brigljevic Marko: Zmija
+[08:14] Kalafatic Zrinka: Morski pas
+[08:14] Kulic Ivan: Orao
+[08:14] Budisin Karlo: Svizac
+[08:14] Osmanovic Marko: Sokol
+[08:14] Remenar Fran: Puz
+[08:17] Valerijev Juraj: Svinja
+[08:17] Kopjar Mario: Tapir
+[08:17] Diki Tunjic Vito: Koza
+[08:17] Butina David: Svinja!
+[08:17] Herman Diva: Krava
+[08:17] Hancic Lucijan Luka: Magarac
+[08:17] Maletic Luka: Pingvin
+[08:17] Todoric Petar: Leptir
+[08:17] Kuzman Roman: Sokol
+[08:20] Tensek David: Majmun
+[08:20] Vuletic Jaksa: Krava
+[08:20] Bakran Josip: Slon
+[08:20] Faletar Karlo: Zec
+[08:20] Mlakic Karlo: Leptir
+[08:20] Franulovic Luka: Kameleon
+[08:20] Kis Matej: Majmun
+[08:20] Trzic Mihael: Koza
+[08:21] Rak Renato: Svizac
+[08:21] Tomljenovic Domagoj: Sokol
+[08:24] Mladar Jan: Majmun
+[08:24] Matoic Karlo: Puz
+[08:24] Pavetic Luka: Medvjed
+[08:24] Farkas Matija: Pingvin
+[08:24] Derdic Stjepan: Pingvin
+[08:24] Novak Anel: Tapir
+[08:24] Jagunec Kristijan: Pas
+[08:24] Tadic Miran: Zebra
+[08:24] Hrupek David: Zmija
+[08:25] Burcul Luka: Koza
+[08:29] Matkovic Prosper: Ovca
+[08:29] Lepur Dominik: Koza
+[08:30] Pavlic Luka: Zirafa
+[08:30] Gudelj Stjepan: Slon
+[08:30] Keca Domagoj: Jelen
+[08:30] Matoic Luka: Bubamara
+[08:30] Grgic Sara: Kameleon
+[08:38] Milanja Ante: Jelen
+[08:38] Papac Laura: Svinja
+[08:46] Dobrinic Mislav: Svinja
+[08:46] Bakaric Jan: Kameleon
+[08:46] Kalinic Karlo: Jazavac
+[08:46] Aleksic Matija: morski pas s ostrim zubima
+[08:46] Hadzic Edi: Zirafa
+[08:46] Lovretic Lukas: Vuk
+[08:46] Popovic Tihomir: Krava
+[08:46] Odak Dominik: Bogomoljka
+[08:59] Prekratic Ivan: Kameleon
+[08:59] Cvitak Karlo: Vuk
+[09:02] Rogic Luka: Bubamara
+[09:02] Vukovic Marko: Pingvin
+[09:02] Jaksic Teo: Ovca
+[09:02] Spajic Antun: Jelen
+[09:02] Plaftak Edi: Magarac
+[09:04] Hojski Leon: Glista
+[09:04] Vignjevic Maja: Vuk
+[09:04] Jakopec Petar: Svizac
+[09:04] Petrekovic Tin: Pas jazavcar
+[09:04] Pejkunovic Filip: Slon
+[09:04] Barisic Josip: Zirafa
+[09:11] Rotim Marijan: Morski Pas
+[09:11] Cvenk Vilim: Medvjed
+[09:11] Begovic Amir: Morski pas!!!!
+[09:11] Mavracic Antonio: Pas
+[09:11] Mestrovic Dario: Jazavac
+[09:11] Okican Karlo: Orao
+[09:11] Bubak Leo: Mali pas
+[09:20] Profesor Ivan: Morski pas
+
+IZLAZ:
+
+Broj studenata koji su pogodili zivotinju: 4 od 77.
+
+Studenti koji su pogodili zivotinju:
+Kalafatic Zrinka
+Aleksic Matija
+Rotim Marijan
+Begovic Amir
+
+------------------------------------- 4. test case -------------------------------------
+
+------------------------------------- 5. test case -------------------------------------
+
+Moguæe je da studenti u poruci pošalju bilo kakav tekst koji ne sadrži životinju, npr.
+studenti Doki Marko i Jaki Ljutomir.
+
+ULAZ:
+
+[12:45] Lovras Lucija: Medvjed
+[12:45] Doki Marko: A sto se to igrate?
+[12:45] Bashir S B Yousef: Papagaj
+[12:45] Maljkovic Mislav: Krava
+[12:45] Przic Petar: Pile
+[12:45] Jaki Ljutomir: Robot
+[12:45] Kolonic Luka: Leptir
+[12:46] Profesor Ivan: Papagaj
+
+IZLAZ:
+
+Broj studenata koji su pogodili zivotinju: 1 od 7.
+
+Studenti koji su pogodili zivotinju:
+Bashir S B Yousef
+
+------------------------------------- 5. test case -------------------------------------
