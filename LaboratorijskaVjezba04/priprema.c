@@ -6,15 +6,15 @@
 
 #define MAX 512
 
-char* imeIzUnosa(char unos[]) {
+char* imeIzUnosa(char* unos) {
 	int len = strlen(unos);
-	char* start = &unos[0], * end = &unos[0];
+	char* start = unos, * end = unos;
 
 	for (int i = 0; i < len; i++)
 	{
 		if (isalpha(unos[i])) {
-			start = &unos[i];
-			end = &unos[i];
+			start = unos + i;
+			end = unos + i;
 
 			for (int j = 0; j < len - 1; j++)
 			{
@@ -36,20 +36,20 @@ char* imeIzUnosa(char unos[]) {
 	return ime;
 }
 
-char* pocetakZivotinje(char unos[]) {
+char* pocetakZivotinje(char* unos) {
 	int len = strlen(unos);
 
 	for (int i = 1; i < len - 1; i++)
 	{
 		if (isalpha(unos[i + 1]) && isspace(unos[i]) && unos[i - 1] == ':') {
-			return &unos[i + 1];
+			return unos + i + 1;
 		}
 	}
 
 	return NULL;
 }
 
-char* zivotinjaIzUnosa(char unos[]) {
+char* zivotinjaIzUnosa(char* unos) {
 	char* start = pocetakZivotinje(unos);
 	int len = strlen(start);
 
@@ -61,16 +61,20 @@ char* zivotinjaIzUnosa(char unos[]) {
 
 char** upisiStudenta(char** studenti, char* ime, int index) {
 
-	studenti[index] = (char*)calloc(strlen(ime), sizeof(char*));
-	strcpy(studenti[index], ime);
+	studenti = (char**)realloc(studenti, sizeof(char**) * index);
+
+	studenti[index - 1] = (char*)calloc(strlen(ime), sizeof(char*));
+	strcpy(studenti[index - 1], ime);
 
 	return studenti;
 }
 
 char** upisiZivotinju(char** zivotinje, char* zivotinja, int index) {
 
-	zivotinje[index] = (char*)calloc(strlen(zivotinja), sizeof(char*));
-	strcpy(zivotinje[index], zivotinja);
+	zivotinje = (char**)realloc(zivotinje, sizeof(char**) * index);
+
+	zivotinje[index - 1] = (char*)calloc(strlen(zivotinja), sizeof(char*));
+	strcpy(zivotinje[index - 1], zivotinja);
 
 	return zivotinje;
 }
@@ -119,11 +123,8 @@ int main() {
 
 		nStudenata++;
 
-		studenti = (char**)realloc(studenti, sizeof(char**) * nStudenata);
-		zivotinje = (char**)realloc(zivotinje, sizeof(char**) * nStudenata);
-
-		studenti = upisiStudenta(studenti, imeUnositelja, nStudenata - 1);
-		zivotinje = upisiZivotinju(zivotinje, unesenaZivotinja, nStudenata - 1);
+		studenti = upisiStudenta(studenti, imeUnositelja, nStudenata);
+		zivotinje = upisiZivotinju(zivotinje, unesenaZivotinja, nStudenata);
 
 		scanf(" %512[^\n]", unos);
 
