@@ -20,8 +20,8 @@ int main() {
 	char* imeUnositelja = imeIzUnosa(unos);
 	char* unesenaZivotinja = zivotinjaIzUnosa(unos);
 
-	char** studenti = (char**)malloc(sizeof(char**) * 1);
-	char** zivotinje = (char**)malloc(sizeof(char**) * 1);
+	char** studenti = (char**)malloc(sizeof(char*) * 1);
+	char** zivotinje = (char**)malloc(sizeof(char*) * 1);
 
 	while (strcmp(imeUnositelja, "Profesor Ivan") != 0) {
 
@@ -61,7 +61,7 @@ char* imeIzUnosa(char* unos) {
 	char* end = strstr(start, ": ");
 
 	int len = end - start;
-	char* ime = (char*)calloc(len + 1, sizeof(char*));
+	char* ime = (char*)calloc(len + 1, sizeof(char));
 
 	strncpy(ime, start, len);
 
@@ -85,7 +85,7 @@ char* zivotinjaIzUnosa(char* unos) {
 	char* start = pocetakZivotinje(unos);
 	int len = strlen(start);
 
-	char* zivotinja = (char*)calloc(len + 1, sizeof(char*));
+	char* zivotinja = (char*)calloc(len + 1, sizeof(char));
 	strncpy(zivotinja, start, len);
 
 	return zivotinja;
@@ -93,9 +93,9 @@ char* zivotinjaIzUnosa(char* unos) {
 
 char** upisPodatka(char** matrica, char* podatak, int index) {
 
-	matrica = (char**)realloc(matrica, sizeof(char**) * index);
+	matrica = (char**)realloc(matrica, sizeof(char*) * index);
 
-	matrica[index - 1] = (char*)calloc(strlen(podatak), sizeof(char*));
+	matrica[index - 1] = (char*)calloc(strlen(podatak) + 1, sizeof(char*));
 	strcpy(matrica[index - 1], podatak);
 
 	free(podatak);
