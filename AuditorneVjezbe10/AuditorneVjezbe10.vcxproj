@@ -19,10 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="zad01.c" />
-    <ClCompile Include="zad02.c" />
-    <ClCompile Include="zad03.c" />
-    <ClCompile Include="zad04.c" />
+    <ClCompile Include="zad05.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

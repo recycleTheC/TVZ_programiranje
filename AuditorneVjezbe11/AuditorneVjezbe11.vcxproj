@@ -22,6 +22,9 @@
     <Text Include="luke.txt" />
     <Text Include="mojejahte.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="zad02.c" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>

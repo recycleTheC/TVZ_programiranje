@@ -15,16 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="zad01.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="zad02.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="zad03.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="zad04.c">
+    <ClCompile Include="zad05.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

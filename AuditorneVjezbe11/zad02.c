@@ -16,58 +16,34 @@ typedef struct {
 	char naziv[50];
 	double lat;
 	double lng;
-	Jahta jahte[50];
+	Jahta* jahte;
 	int brJahti;
 } Luka;
 
-Jahta* ucitajJahte(int* n);
 Luka* ucitajLuke(int* pn);
-
-Jahta* pronadjiJahte(Jahta* niz, int n, char* sifra, int* brJahti) {
-	int br = 0;
-	int max = 5;
-
-	Jahta* rez = (Jahta*)malloc(sizeof(Jahta) * max);
-
-	for (int i = 0; i < n; i++)
-	{
-		if (strcmp(sifra, niz[i].luka) == 0) {
-			if (br == max) {
-				rez = (Jahta*)realloc(rez, sizeof(Jahta) * max);
-			}
-		}
-	}
-}
+Jahta* ucitajJahte(int* n);
+Jahta* pronadjiJahte(Jahta* niz, int n, char* sifra, int* brJahti);
+void sortiranje(Jahta* niz, int n);
 
 int main() {
 
 	int brJahti = 0, brLuka = 0;
+
 	Jahta* jahte = ucitajJahte(&brJahti);
 	Luka* luke = ucitajLuke(&brLuka);
 
-	for (int i = 0; i < brLuka; i++)
-	{
-		printf("%s %d %s %s\n", luke[i].skracenica, jahte[i].sifraModela, jahte[i].ime, jahte[i].luka);
-	}
-
-	for (int i = 0; i < brJahti; i++)
-	{
-		for (int j = 0; j < brLuka; j++)
-		{
-			if (strcmp(luke[j].skracenica, jahte[i].luka) == 0) {
-				int index = luke[j].brJahti;
-				luke[j].jahte[index] = jahte[i];
-				luke[j].brJahti++;
-			}
-		}
+	for (int i = 0; i < brLuka; i++) {
+		luke[i].jahte = pronadjiJahte(jahte, brJahti, luke[i].skracenica, &luke[i].brJahti);
 	}
 
 	for (int i = 0; i < brLuka; i++)
 	{
-		printf("%s\n", luke[i].naziv);
+		sortiranje(luke[i].jahte, luke[i].brJahti);
+
+		printf("Luka: %s\n", luke[i].skracenica);
 		for (int j = 0; j < luke[i].brJahti; j++)
 		{
-			printf("    %s %s\n", luke[i].jahte[j].registracija, luke[i].jahte[j].ime);
+			printf("\t%s %s %s\n", luke[i].skracenica, luke[i].jahte[j].registracija, luke[i].jahte[j].ime);
 		}
 	}
 
@@ -76,8 +52,6 @@ int main() {
 
 Jahta* ucitajJahte(int* pn) {
 	FILE* mojeJahte = fopen("mojejahte.txt", "r");
-
-	// TV9950 48 Carmenta#BRL
 
 	Jahta* jahte;
 	jahte = (Jahta*)malloc(sizeof(Jahta) * 487);
@@ -120,4 +94,42 @@ Luka* ucitajLuke(int* pn) {
 	*pn = n;
 
 	return luke;
+}
+
+Jahta* pronadjiJahte(Jahta* niz, int n, char* sifra, int* brJahti) {
+	int br = 0;
+	int max = 5;
+
+	Jahta* rez = (Jahta*)malloc(sizeof(Jahta) * max);
+
+	for (int i = 0; i < n; i++)
+	{
+		if (strcmp(sifra, niz[i].luka) == 0) {
+			if (br == max) {
+				rez = (Jahta*)realloc(rez, sizeof(Jahta) * max * 2);
+				max *= 2;
+			}
+
+			rez[br++] = niz[i];
+		}
+	}
+
+	*brJahti = br;
+
+	return rez;
+}
+
+void sortiranje(Jahta* niz, int n) {
+	for (int i = 0; i < n - 1; i++)
+	{
+		for (int j = i+1; j < n; j++)
+		{
+			if (strcmp(niz[i].registracija, niz[j].registracija) > 0) {
+				Jahta temp = niz[i];
+				niz[i] = niz[j];
+				niz[j] = temp;
+			}
+
+		}
+	}
 }
