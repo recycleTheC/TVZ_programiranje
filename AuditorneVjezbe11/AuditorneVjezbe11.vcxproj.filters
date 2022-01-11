@@ -15,8 +15,11 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="zad01.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <Text Include="luke.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="mojejahte.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
