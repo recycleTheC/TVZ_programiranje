@@ -30,7 +30,7 @@ int main() {
 		studenti = upisPodatka(studenti, imeUnositelja, nStudenata);
 		zivotinje = upisPodatka(zivotinje, unesenaZivotinja, nStudenata);
 
-		scanf(" %512[^\n]", unos);
+		scanf(" %256[^\n]", unos);
 
 		imeUnositelja = imeIzUnosa(unos);
 		unesenaZivotinja = zivotinjaIzUnosa(unos);
