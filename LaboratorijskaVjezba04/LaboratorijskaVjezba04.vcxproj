@@ -142,7 +142,7 @@
     <Text Include="priprema.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="priprema.c" />
+    <ClCompile Include="zad.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

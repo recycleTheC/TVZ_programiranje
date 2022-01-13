@@ -16,11 +16,11 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="priprema.txt">
-      <Filter>Source Files</Filter>
+      <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="priprema.c">
+    <ClCompile Include="zad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
