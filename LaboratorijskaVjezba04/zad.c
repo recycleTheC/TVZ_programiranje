@@ -11,7 +11,7 @@
 void ispis(char** matrica, int n);
 int kretanje(char** matrica, int n, int m);
 
-int main1() {
+int main() {
 
 	int n, m;
 
