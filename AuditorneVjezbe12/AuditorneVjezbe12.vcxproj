@@ -18,17 +18,11 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="priprema.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="priprema.txt" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{5ca25d56-413f-4c53-803f-f96cad557b10}</ProjectGuid>
-    <RootNamespace>LaboratorijskaVjezba04</RootNamespace>
+    <ProjectGuid>{912bf658-6cc5-44c9-9c65-98eb8a832707}</ProjectGuid>
+    <RootNamespace>AuditorneVjezbe12</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -144,6 +138,12 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="priprema.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="zaposlenici.bin" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -23,7 +23,7 @@
     <Text Include="mojejahte.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="zad02.c" />
+    <ClCompile Include="zad03.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
