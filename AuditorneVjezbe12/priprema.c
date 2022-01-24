@@ -12,7 +12,7 @@ typedef struct {
 
 int brojZapisa(FILE* dat);
 
-int main() {
+int main(int argc, char* argv[]) {
 
 	FILE* datoteka = fopen("zaposlenici.bin", "ab");
 
@@ -68,7 +68,7 @@ int main() {
 }
 
 int brojZapisa(FILE* dat) {
-	 
+
 	fseek(dat, 0, SEEK_END);
 	int n = ftell(dat) / sizeof(Osoba);
 	fseek(dat, 0, SEEK_SET);

@@ -15,13 +15,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="rjecnik.c">
+    <ClCompile Include="priprema.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Prijevod.txt">
+    <Text Include="plan.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="putovanja.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="zemlje.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="ciljevi.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="plan.out">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
