@@ -32,6 +32,9 @@
     <Text Include="ciljevi.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="priprema.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <None Include="plan.out">
