@@ -1,0 +1,114 @@
+Jutro je. Sunce se lagano probija kroz maglu. Poèinjete dnevni ritual odlaskom na WC i otvaranjem administracijskog suèelja stranice www.novisvjetskiporedak.com , i iznenadi vas poruka èlana èiji je šogor visokopozicioniran u WHO naslova "sve je istina". Naravno, emocije su nahrupile i kad ste otvorili poruku, nije vam bilo žao: procurio je reptilski plan kada se pušta koja varijanta COVID-19 virusa koji to zapravo i nije, koliko æe biti opasna, te koliko æe trajati. Odmah ste se bacili na planiranje putovanja s obzirom na listu želja, budžet kojim raspolažete i vjerojatnost lockdowna u zemlji koju posjeæujete u navedenom periodu. Najbolje od svega, plan je u tekstualnoj datoteci plan.txt, gdje svaki redak sadrži informaciju o nazivu soja, datumu pojavljivanja, kriteriju opasnosti O (od 1 do 50) te otpornosti na cjepivo R (1 - neotporan na cjepivo a 10 potpuno otporan na cjepivo). 
+
+Dosad ste aktivno pratili dogaðanja u svakoj zemlji, te veæ imate sastavljenu listu zemalja svijeta s navedenim informacijama: šifra zemlje (3 slova), naziv zemlje (max 50 slova), procjepljenost CJEP (postotak, iskazano kao broj od 0-1) i tendencija k zatvaranju L (1 - nikad se ne ništa ne zatvara - recimo Bugarska, i 10 lockdown ide odmah i traje dugo - recimo Austr(al)ija). Pratili ste to u tekstualnoj datoteci zemlje.txt.
+
+To vam pomaže izraèunati kad za koju zemlju se može putovati. Naime, ukoliko datum pojave novog soja oznaèimo s X, tada je za oèekivati da lockdown poèinje CJEP/L*(50-O*R) u odnosu na pojavu soja a traje O*R*L/10 dana.
+
+Primjer
+Neka je dosao soj A, koji ima faktor O=18, R=2, i pojavio se 1.6.2020. godine.
+Uzmimo za primjer Australiju koja ima CJEP=0.7, L=10. Poèetak lockdowna za Australiju je tada 0.7/10*(50-18*2) = 0.7/10*14 = 0.98 (zaokruženo na prvi manji cijeli broj) = 0 dana od pojave (moguæe je da broj bude i negativan, tada zemlja preventivno opali lockdown prije soja, što potvrðuje tezu o postojanju plana). Trajanje je O*R*L/10 = 18*2*10/10=36 dana, te lockdown poèinje 1.6.2020. a završava 7.7.2020.
+
+Prilikom planiranja putovanja, prihvatljivo vam je otiæi iz Australije najkasnije 1.6., a doæi najranije 7.7. (dan odlaska i dolaska se može preklapati s poèetkom ili krajem lockdowna). S obzirom da se dobro snalazite s datumima (èak znate i sve mjesece na pamet po redu), vrijeme je za akciju.
+
+Popis opcija za putoavnje se nalazi u treæoj datoteci putovanja.txt, gdje je definirana šifra države putovanja, datum polaska i odlaska te cijena.
+
+S konzole se upisuje budžet u prvom retku, te broj i popis država po prioritetima. To znaèi da redom po popisu država pokušavate naæi prihvatljivo putovanje za svaku državu s najmanjom cijenom (broj dana nije bitan). Države prestajete obilaziti kad se budžet istroši.
+
+Prijedlog rješavanja
+- napraviti strukturu za zemlju, ponudu putovanja i soj
+- uèitati sve podatke iz datoteka u memoriju. Pogledati podatke u datoteci i zakljuèiti format svakog retka
+- za svaku državu na listi želja naæi moguæe putovanje s obzirom na pravila lockdowna. Izraèun lockdowna za pojedini soj i zemlju napraviti u funkciji.
+
+---------------
+
+10000 3
+ITA
+JPN
+BGR
+
+---------------
+
+2500 3
+ITA
+JPN
+BGR
+
+---------------
+
+19000 5
+AFG
+ALB
+ARG
+AUT
+BLR
+
+---------------
+
+3000 10
+DEU
+GIB
+MDG
+CHN
+BIH
+AUS
+AUT
+RUS
+ITA
+ESP
+
+---------------
+
+3000 10
+CHN
+BIH
+AUS
+AUT
+RUS
+DEU
+GIB
+MDG
+ITA
+ESP
+
+---------------
+
+4460 9
+CHN
+BIH
+AUS
+AUT
+RUS
+GIB
+MDG
+ITA
+ESP
+
+---------------
+
+5000 11
+JPN
+NOR
+RUS
+SWE
+SVN
+PRT
+GIB
+MDG
+ARG
+AFG
+ALB
+
+---------------
+
+8000 11
+NOR
+RUS
+SWE
+SVN
+JPN
+PRT
+GIB
+MDG
+ARG
+AFG
+ALB
