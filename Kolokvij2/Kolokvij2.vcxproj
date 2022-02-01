@@ -18,11 +18,21 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="modeli.dat" />
+    <None Include="rezultat.out" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="sajam.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sajam.c" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{bee81114-6f74-4d43-adc9-21dbaf754052}</ProjectGuid>
-    <RootNamespace>LaboratorijskaVjezba05</RootNamespace>
+    <ProjectGuid>{738e6500-3012-4ea2-8a81-67b4e7062dae}</ProjectGuid>
+    <RootNamespace>Kolokvij2</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -138,20 +148,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <Text Include="ciljevi.txt" />
-    <Text Include="plan.txt" />
-    <Text Include="priprema.txt" />
-    <Text Include="putovanja.txt" />
-    <Text Include="racun.txt" />
-    <Text Include="zemlje.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="plan.out" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="zad1.c" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

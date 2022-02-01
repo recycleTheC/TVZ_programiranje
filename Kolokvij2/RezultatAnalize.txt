@@ -1,0 +1,5 @@
+It was a beautiful sunny day until this terrible rain.
+beautiful
+sunny
+terrible
+Analiza: pozitivna

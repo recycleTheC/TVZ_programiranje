@@ -15,32 +15,20 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="plan.txt">
+    <None Include="modeli.dat">
       <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="putovanja.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="zemlje.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="ciljevi.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="priprema.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="racun.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="plan.out">
+    </None>
+    <None Include="rezultat.out">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="zad1.c">
+    <Text Include="sajam.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sajam.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
