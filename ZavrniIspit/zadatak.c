@@ -32,12 +32,13 @@ int** generiraj(int niz[], int velicina, int n, int m) {
 
 int main() {
 	int niz[5] = { 1,2,3,4,5 };
+	int n = 2, m = 3;
 
-	int** mat = generiraj(niz, 5, 2, 3);
+	int** mat = generiraj(niz, 5, n, m);
 
-	for (int i = 0; i < 2; i++)
+	for (int i = 0; i < n; i++)
 	{
-		for (int j = 0; j < 3; j++)
+		for (int j = 0; j < m; j++)
 		{
 			printf(" %d", mat[i][j]);
 		}
