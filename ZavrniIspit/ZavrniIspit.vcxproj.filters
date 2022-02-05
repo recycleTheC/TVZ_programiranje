@@ -15,20 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="modeli.dat">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="rezultat.out">
-      <Filter>Resource Files</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="sajam.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="zad1.c">
+    <ClCompile Include="zadatak.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

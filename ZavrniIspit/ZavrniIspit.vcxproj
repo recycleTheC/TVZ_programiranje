@@ -19,20 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <None Include="modeli.dat" />
-    <None Include="rezultat.out" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="sajam.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="zad1.c" />
+    <ClCompile Include="zadatak.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{738e6500-3012-4ea2-8a81-67b4e7062dae}</ProjectGuid>
-    <RootNamespace>Kolokvij2</RootNamespace>
+    <ProjectGuid>{51bb1d4e-f1c0-46dd-b357-d98fef4344be}</ProjectGuid>
+    <RootNamespace>ZavrniIspit</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
