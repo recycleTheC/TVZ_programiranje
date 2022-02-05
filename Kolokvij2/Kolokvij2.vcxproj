@@ -26,7 +26,7 @@
     <Text Include="sajam.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="zad1.c" />
+    <ClCompile Include="zad2.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

@@ -28,7 +28,7 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="zad1.c">
+    <ClCompile Include="zad2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
