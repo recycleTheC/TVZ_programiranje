@@ -1,0 +1,19 @@
+ULAZ:
+Mate i Tika hodaju ulicom.
+IZLAZ:
+ulicom: 649
+
+ULAZ:
+Mate i Tika hodaju ULICOM.
+IZLAZ:
+hodaju: 635
+
+ULAZ:
+Pasko patak dobio zadatak nije znao RIJESITI zadatka.
+IZLAZ:
+zadatak: 736
+
+ULAZ:
+hjadhjsadjadj gjd sgjdagjag jdsadgaugd aauzasgdugadzuagduzsgugas dg da dau du au dsafdfs.
+IZLAZ:
+aauzasgdugadzuagduzsgugas: 2693

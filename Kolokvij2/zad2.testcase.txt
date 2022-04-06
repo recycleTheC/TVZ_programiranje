@@ -1,0 +1,29 @@
+// datoteka 'karte.dat' nije originalna datoteka s kolokvija
+// datoteku sam napravio otprilike -> toliko da se ima sa neèime raditi
+
+ULAZ:
+1
+2.2.2015. 19:00 Safri duo: Ultimate tour
+
+IZLAZ (datoteka):
+Safri duo: Ultimate tour 2.2.2015. 19:00: 1668.47 kn
+
+ULAZ:
+2
+2.2.2015. 20:00 Gibonni: Toleranca tour
+2.2.2015. 19:00 Kings of strings
+
+IZLAZ(datoteka):
+Gibonni: Toleranca tour 2.2.2015. 20:00: 831.12 kn
+Kings of strings 2.2.2015. 19:00: 1850.53 kn
+
+ULAZ:
+3
+2.2.2015. 19:00 Safri duo: Ultimate tour
+27.2.2015. 20:00 20 fingers: Matinee Musicale
+5.2.2015. 19:00 Kraljevi ulice - 20 godina glazbe
+
+IZLAZ(datoteka):
+Safri duo: Ultimate tour 2.2.2015. 19:00: 1668.47 kn
+20 fingers: Matinee Musicale 27.2.2015. 20:00: 818.44 kn
+Kraljevi ulice - 20 godina glazbe 5.2.2015. 19:00: 730.81 kn

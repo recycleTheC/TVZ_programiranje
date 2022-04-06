@@ -1,0 +1,71 @@
+ULAZ:
+
+7 2
+PR
+OG
+RA
+MI
+RA
+NJ
+E.
+1
+R D
+
+IZLAZ:
+
+PD
+OG
+DA
+MI
+DA
+NJ
+E.
+
+
+ULAZ:
+
+7 5
+DOSAO
+MEDO-
+U-DUC
+AN-I-
+KUPIO
+MLIJE
+KO...
+2
+M D
+K T
+
+IZLAZ:
+
+DOSAO
+DEDO-
+U-DUC
+AN-I-
+TUPIO
+DLIJE
+TO...
+
+
+ULAZ:
+
+5 8
+ISAsdfsd
+dsfdfsds
+dfgg0sdf
+fgssdfsf
+gfsgshfd
+5
+I .
+d 8
+0 z
+d s
+s e
+
+IZLAZ:
+
+.SAe8fe8
+8ef8fe8e
+8fggze8f
+fgee8fef
+gfegehf8

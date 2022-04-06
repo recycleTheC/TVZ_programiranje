@@ -1,0 +1,26 @@
+ULAZ:
+1 10
+2 3
+
+IZLAZ:
+9, 8, 4, 3, 2
+
+
+ULAZ:
+-1 15
+1 101
+10 20
+2 5
+
+IZLAZ:
+Krivi unos brojeva X i Y!
+Krivi unos brojeva X i Y!
+18, 16, 15, 14, 12
+
+
+ULAZ:
+5 15
+4 16
+
+IZLAZ:
+12, 8

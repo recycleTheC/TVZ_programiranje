@@ -26,6 +26,15 @@
     <Text Include="sajam.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="zad1.testcase.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="podaci.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="zad2.testcase.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="zad2.c">

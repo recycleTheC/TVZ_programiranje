@@ -23,7 +23,10 @@
     <None Include="rezultat.out" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="podaci.txt" />
     <Text Include="sajam.txt" />
+    <Text Include="zad1.testcase.txt" />
+    <Text Include="zad2.testcase.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="zad2.c" />

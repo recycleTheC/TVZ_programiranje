@@ -21,6 +21,10 @@
   <ItemGroup>
     <ClCompile Include="zad2.c" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="zad1.testcase.txt" />
+    <Text Include="zad2.testcase.txt" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
